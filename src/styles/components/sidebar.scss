@@ -1,0 +1,71 @@
+@import "../variables";
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: $primary-darkslate;
+  .brand {
+    background-color: $primary-blue;
+    h3 {
+      color: white;
+      padding: 20px 15px;
+      font-size: $primary-fontsize;
+      font-family: $primary-font;
+    }
+  }
+  .content {
+    padding: 10px;
+    .wrapper {
+      h3 {
+        color: $primary-gray;
+        font-family: $primary-font;
+        font-size: $primary-fontsize;
+        margin: 15px 0px 5px 0px;
+      }
+    }
+    #dashboard-route {
+      padding: 25px 0px;
+      * {
+        color: white;
+      }
+    }
+  }
+}
+.route {
+  width: 100%;
+  padding: 12px 0px 12px 0px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  cursor: pointer;
+  color: $primary-gray;
+  text-decoration: none;
+  font-family: $primary-font;
+  font-size: $primary-fontsize;
+
+  div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    color: $primary-gray;
+    width: 20px;
+  }
+  .arrow {
+    color: $primary-gray;
+    font-size: 10px;
+  }
+  &:hover {
+    * {
+      transition-duration: 0.3s;
+      color: white;
+    }
+  }
+}

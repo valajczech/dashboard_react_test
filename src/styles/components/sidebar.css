@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #212529;
+}
+.sidebar .brand {
+  background-color: #246ea7;
+}
+.sidebar .brand h3 {
+  color: white;
+  padding: 20px 15px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.sidebar .content {
+  padding: 10px;
+}
+.sidebar .content .wrapper h3 {
+  color: #747f8f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 15px 0px 5px 0px;
+}
+.sidebar .content #dashboard-route {
+  padding: 25px 0px;
+}
+.sidebar .content #dashboard-route * {
+  color: white;
+}
+
+.route {
+  width: 100%;
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #747f8f;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.route div {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.route .icon {
+  color: #747f8f;
+  width: 20px;
+}
+.route .arrow {
+  color: #747f8f;
+  font-size: 10px;
+}
+.route:hover * {
+  transition-duration: 0.3s;
+  color: white;
+}/*# sourceMappingURL=sidebar.css.map */
