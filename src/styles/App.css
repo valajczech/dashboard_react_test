@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .App {
   height: 100vh;
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: 200px repeat(4, 1fr);
+  grid-template-rows: 50px repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.App .content {
+  grid-area: 2/2/6/6;
 }
 
 /*RESET*/
