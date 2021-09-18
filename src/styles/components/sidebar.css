@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .sidebar {
+  grid-area: 1/1/6/2;
   width: 200px;
   height: 100vh;
   background-color: #212529;
 }
 .sidebar .brand {
   background-color: #246ea7;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 .sidebar .brand h3 {
+  padding: 10px;
   color: white;
-  padding: 20px 15px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }

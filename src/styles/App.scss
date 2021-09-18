@@ -1,5 +1,17 @@
+@import "../styles/variables";
+
 .App {
   height: 100vh;
+  background-color: $primary-background;
+
+  display: grid;
+  grid-template-columns: 200px repeat(4, 1fr);
+  grid-template-rows: 50px repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .content {
+    grid-area: 2 / 2 / 6 / 6;
+  }
 }
 
 /*RESET*/
