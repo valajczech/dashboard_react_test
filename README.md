@@ -22,10 +22,10 @@ Built using react.js and SCSS/SASS.
 
 ### How to setup local development environment
 
-1. Clone the repository
-   `git clone https://github.com/valajczech/webops_dashboard`
-2. Install requiered dependencies
-   `npm install` or `yarn install`
-3. Fire up local development server
-   `npm run start`
-   The server will start on [http://localhost:3000/](http://localhost:3000/)
+1. Clone the repository  
+   `git clone https://github.com/valajczech/webops_dashboard`  
+2. Install requiered dependencies  
+   `npm install` or `yarn install`  
+3. Fire up local development server  
+   `npm run start`  
+   The server will start on [http://localhost:3000/](http://localhost:3000/)  
