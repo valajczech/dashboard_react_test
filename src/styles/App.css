@@ -9,7 +9,15 @@
   grid-row-gap: 0px;
 }
 .App .content {
+  padding: 20px 0px;
   grid-area: 2/2/6/6;
+}
+.App .content .summaries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 /*RESET*/
@@ -97,8 +105,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 

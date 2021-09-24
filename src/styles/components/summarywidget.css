@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.summary-widget {
+  width: 300px;
+  height: 75px;
+  background-color: #246ea7;
+  padding: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}/*# sourceMappingURL=summarywidget.css.map */
