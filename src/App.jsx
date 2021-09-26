@@ -2,6 +2,8 @@ import "./styles/App.css";
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import SummaryWidget from "./components/SummaryWidget";
+import DeviceChart from "./components/DeviceChart";
+
 import { React, useEffect } from "react";
 
 function App() {
@@ -29,7 +31,20 @@ function App() {
             status="down"
             percentile="-4"
           />
-          <SummaryWidget name="Sdílení" number="69" status="down" percentile="-8"/>
+          <SummaryWidget
+            name="Sdílení"
+            number="69"
+            status="down"
+            percentile="-8"
+          />
+        </div>
+        <div className="statistics">
+          <div className="half">
+            <h1>Hello z leve strany</h1>
+          </div>
+          <div className="half">
+            <DeviceChart />
+          </div>
         </div>
       </div>
     </div>
