@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.App {
-  height: 100vh;
+body {
   background-color: #f1f1f1;
+}
+
+.App {
   display: grid;
   grid-template-columns: 200px repeat(4, 1fr);
   grid-template-rows: 50px repeat(4, 1fr);
@@ -9,7 +11,26 @@
   grid-row-gap: 0px;
 }
 .App .content {
+  padding: 20px 0px;
   grid-area: 2/2/6/6;
+}
+.App .content .summaries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.App .content .statistics {
+  display: flex;
+  gap: 10px;
+  padding: 20px 20px;
+}
+.App .content .statistics .half {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*RESET*/
@@ -97,8 +118,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
