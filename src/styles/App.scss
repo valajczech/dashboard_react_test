@@ -1,16 +1,35 @@
-@import "../styles/variables";
+@import "../styles/_variables";
+body {
+  background-color: $primary-background;
+}
 
 .App {
-  height: 100vh;
-  background-color: $primary-background;
-
   display: grid;
   grid-template-columns: 200px repeat(4, 1fr);
   grid-template-rows: 50px repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   .content {
+    padding: 20px 0px;
     grid-area: 2 / 2 / 6 / 6;
+    .summaries {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+    .statistics {
+      display: flex;
+      gap: 10px;
+      padding: 20px 20px;
+      .half {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -99,8 +118,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 

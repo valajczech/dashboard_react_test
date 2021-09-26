@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.summary-widget {
+  width: 250px;
+  height: 70px;
+  background-color: #246ea7;
+  padding: 10px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary-widget .status {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+}
+.summary-widget .status svg {
+  font-size: 10px;
+}
+.summary-widget .status p {
+  font-weight: 900;
+  font-size: 15px;
+}/*# sourceMappingURL=summarywidget.css.map */
