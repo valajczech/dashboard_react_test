@@ -3,6 +3,8 @@ import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import SummaryWidget from "./components/SummaryWidget";
 import DeviceChart from "./components/DeviceChart";
+import VisitorChart from "./components/VisitorChart";
+
 
 import { React, useEffect } from "react";
 
@@ -40,7 +42,7 @@ function App() {
         </div>
         <div className="statistics">
           <div className="half">
-            <h1>Hello z leve strany</h1>
+            <VisitorChart />
           </div>
           <div className="half">
             <DeviceChart />
