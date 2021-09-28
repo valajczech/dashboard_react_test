@@ -33,7 +33,7 @@ class VisitorChart extends React.Component {
   render() {
     return (
       <div className="visitor-chart">
-        <Line height={250} width={600} data={this.state.chartData} options= {{ 
+        <Line width={"auto"}  data={this.state.chartData} options= {{ 
           plugins: {
             title: {
               display: true,

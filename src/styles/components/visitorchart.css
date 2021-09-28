@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .visitor-chart {
   background-color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=visitorchart.css.map */

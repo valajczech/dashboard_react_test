@@ -1,10 +1,11 @@
+// IMPORT COMPONENTS
 import "./styles/App.css";
 import Sidebar from "./components/Sidebar";
 import Topbar from "./components/Topbar";
 import SummaryWidget from "./components/SummaryWidget";
 import DeviceChart from "./components/DeviceChart";
 import VisitorChart from "./components/VisitorChart";
-
+import RecentLogsTable from "./components/RecentLogsTable";
 
 import { React, useEffect } from "react";
 
@@ -41,12 +42,11 @@ function App() {
           />
         </div>
         <div className="statistics">
-          <div className="half">
+          <div className="graphs">
             <VisitorChart />
-          </div>
-          <div className="half">
             <DeviceChart />
           </div>
+          <RecentLogsTable />
         </div>
       </div>
     </div>
