@@ -1,23 +1,27 @@
 # Webops / DCSoft initial project
-
-Simple, frontend only dashboard, fully responsive, fetching data from local `.json` files and then rendering them using chart libraries.  
-  
+   
 Built using react.js and SCSS/SASS.
 
 ## Dependencies
 
 ```json
-{
-  "@testing-library/jest-dom": "^5.11.4",
-  "@testing-library/react": "^11.1.0",
-  "@testing-library/user-event": "^12.1.10",
-  "node-sass": "6.0.1",
-  "react": "^17.0.2",
-  "react-dom": "^17.0.2",
-  "react-icons": "^4.2.0",
-  "react-scripts": "4.0.3",
-  "web-vitals": "^1.0.1"
-}
+"dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "chart.js": "^3.5.1",
+    "gridjs": "^5.0.2",
+    "gridjs-react": "^5.0.2",
+    "install": "^0.13.0",
+    "node-sass": "6.0.1",
+    "npm": "^7.24.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.5",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
 ```
 
 ### How to setup local development environment
