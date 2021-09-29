@@ -1,7 +1,7 @@
 # Webops / DCSoft initial project
    
 Built using react.js and SCSS/SASS.
-
+![screenshot](https://raw.githubusercontent.com/valajczech/webops_dashboard/master/screenshot.png)
 ## Dependencies
 
 ```json
