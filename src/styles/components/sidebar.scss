@@ -2,8 +2,7 @@
 
 .sidebar {
   grid-area: 1 / 1 / 6 / 2;
-  position: fixed;
-  width: 200px;
+  min-width: 200px;
   height: 100vh;
   background-color: $primary-darkslate;
   .brand {
@@ -16,10 +15,9 @@
       color: white;
       font-size: $primary-fontsize;
       font-family: $primary-font;
-
     }
   }
-  .content {
+  .bar-content {
     padding: 10px;
     .wrapper {
       h3 {
@@ -36,6 +34,23 @@
       }
     }
   }
+  .minimize {
+    width: 100%;
+    text-align: center;
+    button {
+      width: 100%;
+      height: 50px;
+      cursor: pointer;
+      outline: none;
+      background-color: $primary-darkslate;
+      color: white;
+      border: solid $primary-darkslate 1px;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #2f353b;
+      }
+    }
+  }
 }
 .route {
   width: 100%;
@@ -45,7 +60,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  
+
   cursor: pointer;
   color: $primary-gray;
   text-decoration: none;
@@ -72,6 +87,29 @@
     * {
       transition-duration: 0.3s;
       color: white;
+    }
+  }
+}
+.minimized {
+  min-width: 75px;
+  .brand {
+    justify-content: center;
+  }
+  .wrapper {
+    h3 {
+      display: none;
+    }
+  }
+  .route {
+    justify-content:center;
+    .icon {
+      height: 20px;
+    }
+    p {
+      display: none;
+    }
+    .arrow {
+      display: none;
     }
   }
 }

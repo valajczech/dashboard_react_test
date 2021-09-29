@@ -26,8 +26,7 @@ class DeviceChart extends React.Component {
     return (
       <div className="device-chart">
         <Doughnut
-          height={400}
-          width={600}
+          width={"80%"}
           data={this.state.chartData}
           options={{
             plugins: {

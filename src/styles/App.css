@@ -4,33 +4,56 @@ body {
 }
 
 .App {
-  display: grid;
-  grid-template-columns: 200px repeat(4, 1fr);
-  grid-template-rows: 50px repeat(4, 1fr);
+  display: flex;
+  /*grid-template-rows: 50px repeat(4, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-row-gap: 0px;*/
 }
 .App .content {
-  padding: 20px 0px;
-  grid-area: 2/2/6/6;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
 }
-.App .content .summaries {
+.App .content:-webkit-scrollbar {
+  display: none;
+}
+.App .content .data {
+  padding: 10px;
+}
+.App .content .data .summaries {
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.App .content .statistics {
+@media screen and (max-width: 1100px) {
+  .App .content .data .summaries {
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 80px 80px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+.App .content .data .statistics {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   padding: 20px 20px;
 }
-.App .content .statistics .half {
-  width: 50%;
-  height: auto;
+.App .content .data .statistics .graphs {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  .App .content .data .statistics .graphs {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*RESET*/
