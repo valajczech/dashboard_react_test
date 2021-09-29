@@ -7,7 +7,7 @@ import DeviceChart from "./components/DeviceChart";
 import VisitorChart from "./components/VisitorChart";
 import RecentLogsTable from "./components/RecentLogsTable";
 
-import { React, useEffect } from "react";
+import { React } from "react";
 
 function App() {
   return (

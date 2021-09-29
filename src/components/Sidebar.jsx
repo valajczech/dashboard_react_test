@@ -12,30 +12,28 @@ import {
   FaFileAlt,
   FaSitemap,
   FaChevronLeft,
+  FaArrowLeft,
+  FaArrowRight,
 } from "react-icons/fa";
 
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);
-    this.isMinimized = false;
+    this.state = {
+      isMinimized: false,
+    };
   }
   handleMinimize = () => {
-    this.isMinimized = !this.isMinimized;
+    this.setState({ isMinimized: !this.state.isMinimized });
   };
   render() {
     return (
-      <div className="sidebar">
+      <div className={this.state.isMinimized ? "sidebar minimized" : "sidebar"}>
         <div className="brand">
-          <h3>DCSoft - Admin</h3>
+          <h3>{this.state.isMinimized ? "DA" : "DCSoft - Admin"}</h3>
         </div>
         <div className="content">
-          <div
-            className="route"
-            id="dashboard-route"
-            onClick={() => {
-              this.handleMinimize();
-            }}
-          >
+          <div className="route" id="dashboard-route">
             <div>
               <FaThLarge className="icon" />
               <p>Nástěnka</p>
@@ -115,9 +113,13 @@ class Sidebar extends React.Component {
             </div>
           </div>
         </div>
+        <div className="minimize">
+          <button onClick={this.handleMinimize}>
+            {this.state.isMinimized ? <FaArrowRight /> : <FaArrowLeft />}
+          </button>
+        </div>
       </div>
     );
   }
 }
-
 export default Sidebar;

@@ -16,7 +16,6 @@
       color: white;
       font-size: $primary-fontsize;
       font-family: $primary-font;
-
     }
   }
   .content {
@@ -36,6 +35,25 @@
       }
     }
   }
+  .minimize {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    button {
+      width: 100%;
+      height: 50px;
+      cursor: pointer;
+      outline: none;
+      background-color: $primary-darkslate;
+      color: white;
+      border: solid $primary-darkslate 1px;
+      transition-duration: 0.3s;
+      &:hover {
+        background-color: #2f353b;
+      }
+    }
+  }
 }
 .route {
   width: 100%;
@@ -45,7 +63,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  
+
   cursor: pointer;
   color: $primary-gray;
   text-decoration: none;
@@ -72,6 +90,29 @@
     * {
       transition-duration: 0.3s;
       color: white;
+    }
+  }
+}
+.minimized {
+  width: 75px;
+  .brand {
+    justify-content: center;
+  }
+  .wrapper {
+    h3 {
+      display: none;
+    }
+  }
+  .route {
+    justify-content:center;
+    .icon {
+      height: 20px;
+    }
+    p {
+      display: none;
+    }
+    .arrow {
+      display: none;
     }
   }
 }
