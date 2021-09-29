@@ -1,5 +1,6 @@
 @import "../_variables.scss";
 .recent-log-table {
+  overflow-x: scroll;
   background-color: white;
   .table {
     padding: 5px;

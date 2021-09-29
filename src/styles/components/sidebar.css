@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .sidebar {
   grid-area: 1/1/6/2;
-  position: fixed;
-  width: 200px;
+  min-width: 200px;
   height: 100vh;
   background-color: #212529;
 }
@@ -18,24 +17,22 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
-.sidebar .content {
+.sidebar .bar-content {
   padding: 10px;
 }
-.sidebar .content .wrapper h3 {
+.sidebar .bar-content .wrapper h3 {
   color: #747f8f;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin: 15px 0px 5px 0px;
 }
-.sidebar .content #dashboard-route {
+.sidebar .bar-content #dashboard-route {
   padding: 25px 0px;
 }
-.sidebar .content #dashboard-route * {
+.sidebar .bar-content #dashboard-route * {
   color: white;
 }
 .sidebar .minimize {
-  position: absolute;
-  bottom: 0px;
   width: 100%;
   text-align: center;
 }
@@ -87,7 +84,7 @@
 }
 
 .minimized {
-  width: 75px;
+  min-width: 75px;
 }
 .minimized .brand {
   justify-content: center;

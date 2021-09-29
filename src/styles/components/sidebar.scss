@@ -2,8 +2,7 @@
 
 .sidebar {
   grid-area: 1 / 1 / 6 / 2;
-  position: fixed;
-  width: 200px;
+  min-width: 200px;
   height: 100vh;
   background-color: $primary-darkslate;
   .brand {
@@ -18,7 +17,7 @@
       font-family: $primary-font;
     }
   }
-  .content {
+  .bar-content {
     padding: 10px;
     .wrapper {
       h3 {
@@ -36,8 +35,6 @@
     }
   }
   .minimize {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     text-align: center;
     button {
@@ -94,7 +91,7 @@
   }
 }
 .minimized {
-  width: 75px;
+  min-width: 75px;
   .brand {
     justify-content: center;
   }
