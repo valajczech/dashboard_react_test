@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .summary-widget {
-  width: 300px;
+  width: 250px;
   height: 70px;
   background-color: #246ea7;
   padding: 10px;
@@ -37,6 +37,6 @@
 }
 @media screen and (min-width: 1500px) {
   .summary-widget {
-    width: 300px;
+    width: 250px;
   }
 }/*# sourceMappingURL=summarywidget.css.map */
