@@ -20,7 +20,7 @@ body {
       .summaries {
         padding:5px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
         gap: 30px;

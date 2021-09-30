@@ -1,7 +1,7 @@
 @import "../_variables";
 
 .summary-widget {
-  width: 300px;
+  width: 250px;
   height: 70px;
   background-color: $primary-blue;
   padding: 10px;
@@ -32,6 +32,6 @@
     height: 80%;
   }
   @media screen and (min-width: 1500px){
-    width: 300px;
+    width: 250px;
   }
 }
