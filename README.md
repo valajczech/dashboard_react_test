@@ -1,6 +1,6 @@
 # Webops / DCSoft initial project
-   
-Built using react.js and SCSS/SASS.
+
+Test project for my first frontend developer job. Design is not mine, I was asked to follow provided design prototype.
 ![screenshot](https://raw.githubusercontent.com/valajczech/webops_dashboard/master/screenshot.png)
 ## Dependencies
 
